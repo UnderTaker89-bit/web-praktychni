@@ -1,0 +1,23 @@
+@base = http://localhost:5000
+
+### Всі відправлення
+GET {{base}}/postings
+
+### Створення. Скопіюйте id з відповіді у змінну нижче.
+POST {{base}}/postings
+Content-Type: application/json
+
+{"from":"Київ","to":"Львів","content":"Підручники","deliveryType":"Standard","weight":2,"width":20,"height":10,"depth":30,"value":500}
+
+@id = 1
+### Одне відправлення
+GET {{base}}/postings/{{id}}
+
+### Оновлення
+PUT {{base}}/postings/{{id}}
+Content-Type: application/json
+
+{"from":"Київ","to":"Одеса","content":"Оновлені підручники","deliveryType":"Express","weight":3,"width":20,"height":10,"depth":30,"value":600}
+
+### Видалення
+DELETE {{base}}/postings/{{id}}

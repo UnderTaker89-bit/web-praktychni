@@ -1,0 +1,9 @@
+{
+  "name": "web-practice-26",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "check": "node --check app.js && node --check api.js && node --check table.js"
+  }
+}

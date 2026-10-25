@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ПР 26 — Відправлення</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><p class="eyebrow">Програмування Веб · Практична 26</p><h1>Поштові відправлення</h1><p>Порядок колонок змінено, колонку висоти прибрано лише в HTML.</p>
+<nav aria-label="Варіанти таблиці"><a href="explicit.html">Початкова таблиця</a><a href="full.html">Усі 10 колонок</a><a href="index.html">Змінений заголовок</a></nav>
+<button type="button" id="refresh">Оновити список</button><p id="status" role="status" aria-live="polite">Завантаження відправлень…</p>
+<div class="table-wrap"><table><thead id="table-header"><tr><th scope="col" x-column="from">Відправник</th>
+<th scope="col" x-column="to">Одержувач</th>
+<th scope="col" x-column="content">Вміст</th>
+<th scope="col" x-column="deliveryType">Тип доставки</th>
+<th scope="col" x-column="weight">Вага, кг</th>
+<th scope="col" x-column="width">Ширина, см</th>
+<th scope="col" x-column="depth">Довжина, см</th>
+<th scope="col" x-column="value">Оголошена вартість, грн</th>
+<th scope="col" x-column="price">Ціна доставки, грн</th></tr></thead><tbody id="postings"></tbody></table></div>
+</main><script type="module" src="app.js"></script></body></html>
