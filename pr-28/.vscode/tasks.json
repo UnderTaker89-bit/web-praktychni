@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Docker: Basics",
+      "type": "shell",
+      "command": "powershell -File ./Практична.ps1 Basics",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Build",
+      "type": "shell",
+      "command": "powershell -File ./Практична.ps1 Build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Rebuild",
+      "type": "shell",
+      "command": "powershell -File ./Практична.ps1 Rebuild",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Check",
+      "type": "shell",
+      "command": "powershell -File ./Практична.ps1 Check",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Stop",
+      "type": "shell",
+      "command": "powershell -File ./Практична.ps1 Stop",
+      "problemMatcher": []
+    }
+  ]
+}

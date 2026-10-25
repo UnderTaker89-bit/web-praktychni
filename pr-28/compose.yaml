@@ -1,0 +1,12 @@
+name: web-pr28
+services:
+  website:
+    build: .
+    image: web-pr28-static:v2
+    ports:
+      - "127.0.0.1:8080:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
