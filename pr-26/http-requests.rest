@@ -1,0 +1,23 @@
+@base = http://localhost:5000
+
+###
+GET {{base}}/postings
+
+###
+POST {{base}}/postings
+Content-Type: application/json
+
+{"from":"Київ","to":"Львів","content":"Підручники","deliveryType":"Standard","weight":2,"width":20,"height":10,"depth":30,"value":500}
+
+@id = 1
+###
+GET {{base}}/postings/{{id}}
+
+###
+PUT {{base}}/postings/{{id}}
+Content-Type: application/json
+
+{"from":"Київ","to":"Одеса","content":"Оновлені підручники","deliveryType":"Express","weight":3,"width":20,"height":10,"depth":30,"value":600}
+
+###
+DELETE {{base}}/postings/{{id}}
